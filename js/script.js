@@ -70,6 +70,8 @@ function frighten() {
     $('a').each(function () {
         window.open($(this).attr('href'));
     });
+    $('#template-input').hide();
+    $('#button').hide();
     var funnyText = $('<marquee>HeRe iS yoUR PRiZe: Rubber Suit, Space Suit, Space Explorer Suit, Plastic Pants, Plastic Silhouettes (Pants), The Rubbers (Pants), The Leathers (Pants), The Greys (Pants), Angry Student Skirt, Plastic Dress, Disco Pumpkin (GrEAT DreSS)</marquee>');
     $('.container').append(funnyText);
 }

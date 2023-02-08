@@ -116,7 +116,7 @@ input {
     font-size: inherit;
     background-color: var(--highlight);
     color: var(--black);
-    height: 100px;
+    height: 300px;
     width: 200px;
     border-radius: var(--standardcurve);
     border-style: none;
@@ -126,7 +126,7 @@ input {
 }
 
 marquee {
-    scrollamount: 30;
+    scrollamount: 60;
 }
 
 ol {
