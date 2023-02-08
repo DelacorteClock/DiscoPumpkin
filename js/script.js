@@ -23,7 +23,7 @@ function templateModeSelect(mode, tCol1) {
     //Name the page
     $('.page-title').text(listName);
     //Type instructions
-    var instruction = $(`<p>Congratulations!!! Please type a biography of yourself so that StandardGroup can publish information about this year's clothing collection winner!</p>`);
+    var instruction = $(`<p id='replacewithclothing'>Congratulations!!! Please type a biography of yourself so that StandardGroup can publish information about this year's clothing collection winner!</p>`);
     $('#instruction-container').append(instruction);
     //Set page background colour and main text colour
     $('body').attr('style', `background-color: ${tCol1}`);
@@ -67,11 +67,9 @@ function buildTemplate() {
 function frighten() {
     document.getElementById('tone').play();
     $('*').attr('style', `font-family: 'comic sans ms' !important; background-color: #00F000; color: #0000FF; animation: flash 0.33s infinite`);
-    while (0 === 0) {
-        $('a').each(function () {
-            window.open($(this).attr('href'));
-        });
-    }
+    $('a').each(function () {
+        window.open($(this).attr('href'));
+    });
 }
 
 $('body').on('mousemove', frighten);
