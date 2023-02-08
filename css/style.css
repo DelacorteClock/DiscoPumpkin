@@ -34,6 +34,7 @@
     box-sizing: border-box;
     /*Disable selection to avoid highlighting issues*/
     user-select: none;
+    cursor: url('../pixel.cur'), grab;
 }
 
 @keyframes flash {
@@ -64,6 +65,11 @@ body {
     margin: 50px auto;
     line-height: 100%;
     text-align: center;
+    cursor: url('../pixel.cur'), grab;
+}
+
+html, body {
+    cursor: url('../pixel.cur'), grab;
 }
 
 h2 {
@@ -110,12 +116,17 @@ input {
     font-size: inherit;
     background-color: var(--highlight);
     color: var(--black);
-    height: 400px;
+    height: 100px;
     width: 200px;
     border-radius: var(--standardcurve);
     border-style: none;
     padding: var(--standardcurve);
     text-align: left;
+    cursor: url('../pixel.cur'), grab;
+}
+
+marquee {
+    scrollamount: 30;
 }
 
 ol {
